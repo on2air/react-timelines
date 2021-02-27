@@ -5,7 +5,7 @@ const create = ({ start, end, zoom, viewportWidth = 0, minWidth = 0 }) => {
 
   const days = duration / MILLIS_IN_A_DAY
   const daysZoomWidth = days * zoom
-
+  console.log('CREATING TIME', start, end, zoom, viewportWidth, minWidth, duration, days, daysZoomWidth)
   let timelineWidth
 
   if (daysZoomWidth > viewportWidth) {
